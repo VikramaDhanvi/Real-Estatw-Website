@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="../CSS/Property_search.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="account" >
+            <li><a href="Buyer_Login.html">Login</a></li>
+            <li><a href="Buyer_Registration.html">sign up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="selected-property">
+            <!-- Property details will be displayed here -->
+        </div>
+        <div id="contact-form">
+            <h2>Contact Agent</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="selection">Select your purpose of buying the house</label>
+                    <select id="selection" name="selection">
+                        <option value="opt0">Purpose</option>
+                        <option value="opt1">Rent purpose</option>
+                        <option value="opt2">Buying purpose</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" onclick="composeEmail()">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <section class="flex">
+            <div class="box">
+                <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+                <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
+                <a href="mailto:vikramadhanvi_paduchuri@srmap.edu.in"><i class="fas fa-envelope"></i><span>vikramadhanvi_paduchuri@srmap.edu.in</span></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i><span>Guntur - 522002,Andhra Pradesh</span></a>
+            </div>
+
+            <div class="box">
+                <a href="home.html"><span>Home</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="contact.html"><span>Contact</span></a>
+                <a href="listings.html"><span>All Listings</span></a>
+                <a href="#"><span>Saved Properties</span></a>
+            </div>
+
+            <div class="box">
+                <a href="#"><span>Facebook</span><i></i></a>
+                <a href="#"><span>Twitter</span><i></i></a>
+                <a href="#"><span>Linkedin</span><i ></i></a>
+                <a href="#"><span>Instagram</span><i ></i></a>
+            </div>
+        </section>
+
+        <div class="credit">&copy; Copyright @ 2022 by <span>Group 16</span> | All rights reserved!</div>
+    </footer>
+    <script src="../JS/Property_search.js"></script>
+</body>
+</html>

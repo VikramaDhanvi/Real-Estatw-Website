@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Login Form</title>
+    <link rel="stylesheet" href="../CSS/Buyer_login.css">
+</head>
+<body style="background-image: url('../images/Buyer_Regd.png'); background-size: cover;">
+    <nav>
+        <ul class="others">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="account" >
+            <li><a href="Buyer_Login.html">Login</a></li>
+            <li><a href="Buyer_Registration.html">sign up</a></li>
+          </ul>
+    </nav>
+    <div class="login-container">
+        <h2>Register as a Buyer</h2>
+        <form action="process_buyer_registration.php" method="POST">
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="First Name" name="first_name" required="">
+                <label for="first_name" class="form__label">First Name</label>
+            </div>
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="Last Name" name="last_name" required="">
+                <label for="last_name" class="form__label">Last Name</label>
+            </div>
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="Username" name="username" required="">
+                <label for="username" class="form__label">Username</label>
+            </div>
+            <div class="form__group field">
+                <input type="email" class="form__field" placeholder="Email" name="email" required="">
+                <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group field">
+                <input type="number" class="form__field" placeholder="Mobile Number" name="mobile_number" required="">
+                <label for="mobile_number" class="form__label">Mobile Number</label>
+            </div>
+            <div class="form__group field">
+                <input type="password" class="form__field" placeholder="Password" name="password" required="">
+                <label for="password" class="form__label">Password</label>
+            </div>
+            <div class="form__group field">
+                <input type="password" class="form__field" placeholder="Confirm Password" required="">
+                <label for="confirm_password" class="form__label">Confirm Password</label>
+            </div>
+            <input type="submit" value="Register">
+            <p style="margin: 0%;">Already have an account? </p><a href="Buyer_Login.html">Login here</a>
+        </form>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <section class="flex">
+            <div class="box">
+                <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+                <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
+                <a href="mailto:vikramadhanvi_paduchuri@srmap.edu.in"><i class="fas fa-envelope"></i><span>vikramadhanvi_paduchuri@srmap.edu.in</span></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i><span>Guntur - 522002,Andhra Pradesh</span></a>
+            </div>
+
+            <div class="box">
+                <a href="home.html"><span>Home</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="contact.html"><span>Contact</span></a>
+                <a href="listings.html"><span>All Listings</span></a>
+                <a href="#"><span>Saved Properties</span></a>
+            </div>
+
+            <div class="box">
+                <a href="#"><span>Facebook</span><i></i></a>
+                <a href="#"><span>Twitter</span><i></i></a>
+                <a href="#"><span>Linkedin</span><i ></i></a>
+                <a href="#"><span>Instagram</span><i ></i></a>
+            </div>
+        </section>
+
+        <div class="credit">&copy; Copyright @ 2022 by <span>Group 16</span> | All rights reserved!</div>
+    </footer>
+</body>
+</html>
+
+
+

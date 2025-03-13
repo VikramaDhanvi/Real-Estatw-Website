@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Property</title>
+  <link rel="stylesheet" href="../CSS/add_property.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+  <h1>Add Property</h1>
+  <form id="add-property-form" class="add-property-form" method="post" action="add_property.php" enctype="multipart/form-data">
+    <label for="property-images">Property Images:</label>
+    <input type="file" id="property-images" name="property-images[]" accept="image/*" multiple>
+    
+    <label for="property-description">Description:</label>
+    <textarea id="property-description" name="property-description" rows="4" cols="50" placeholder="Enter property description"></textarea>
+    
+    <label for="property-price">Price:</label>
+    <input type="text" id="property-price" name="property-price" placeholder="Enter property price">
+    
+    <label for="available-features">Available Features:</label>
+    <textarea id="available-features" name="available-features" rows="4" cols="50" placeholder="Enter available features"></textarea>
+    
+    <label for="unavailable-features">Unavailable Features:</label>
+    <textarea id="unavailable-features" name="unavailable-features" rows="4" cols="50" placeholder="Enter unavailable features"></textarea>
+    
+    <label for="property-location">Location:</label>
+    <input type="text" id="property-location" name="property-location" placeholder="Enter property location">
+    
+    <label for="contact-number">Contact Number:</label>
+    <input type="tel" id="contact-number" name="contact-number" placeholder="Enter contact number">
+    
+    <label for="contact-mail">Contact Mail:</label>
+    <input type="email" id="contact-mail" name="contact-mail" placeholder="Enter contact mail">
+    
+    <button type="submit">Add Property</button>
+  </form>
+  <script src="../JS/add_property.js"></script> <!-- Add your JavaScript file here -->
+</body>
+</html>

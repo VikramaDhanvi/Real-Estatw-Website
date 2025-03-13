@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Seller Registration Form</title>
+    <link rel="stylesheet" href="../CSS/Buyer_login.css">
+    <style>
+        
+    </style>
+</head>
+<style>
+    /* Footer Styles */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-bottom: -40%;
+  }
+  
+  .footer .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .box {
+    flex: 1;
+  }
+  
+  .footer .box a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer .box a i {
+    margin-right: 10px;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer .credit span {
+    font-weight: bold;
+  }
+  
+</style>
+<body style="background-image: url('../images/Seller_Regd.png'); background-size: cover;">
+    <nav>
+        <ul class="Others">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="account">
+            <li><a href="Buyer_Login.html">Login</a></li>
+            <li><a href="Buyer_Registration.html">Sign up</a></li>
+        </ul>
+    </nav>
+    <div class="login-container">
+        <h2>Register as a Seller</h2>
+        <div id="gstValidationResult"></div> <!-- New element to display validation result -->
+        <form action="seller_registration.php" method="POST" onsubmit="return validateForm() && validateNumber()">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="First Name" name="first_name" required="">
+                <label for="name" class="form__label">First Name</label>
+            </div>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Last Name" name="last_name" required="">
+                <label for="name" class="form__label">Last Name</label>
+            </div>
+            <div class="form__group field">
+                <input type="input" id="gstNumber" class="form__field" placeholder="22AAAAA0000A1Z5" name="gst_number" oninput="validateGST()" required="">
+                <label for="name" class="form__label">GST No.</label>
+            </div>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Username" name="username" required="">
+                <label for="name" class="form__label">Username</label>
+            </div>
+            <div class="form__group field">
+                <textarea type="input" class="form__field" placeholder="Address" name="address" required=""></textarea>
+                <label for="name" class="form__label">Address</label>
+            </div>
+            <div class="form__group field">
+                <input type="number" class="form__field" placeholder="Mobile No" name="mobile_number" required="">
+                <label for="name" class="form__label">Mobile No.</label>
+            </div>
+            <div class="form__group field">
+                <input type="email" class="form__field" placeholder="Gmail" name="gmail" required="">
+                <label for="name" class="form__label">Gmail</label>
+            </div>
+            <div class="form__group field">
+                <input type="password" class="form__field" placeholder="Password" name="password" required="">
+                <label for="name" class="form__label">Password</label>
+            </div>
+            <div class="form__group field">
+                <input type="password" class="form__field" placeholder="Confirm Password" name="confirm_password" required="">
+                <label for="name" class="form__label">Confirm Password</label>
+            </div>
+            
+            <!-- Add more fields relevant to seller registration -->
+            <input type="submit" value="Register">
+            <p style="margin: 0%;">Already have an account? <a href="Buyer_Login.html">Login here</a></p>
+        </form>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <section class="flex">
+            <div class="box">
+                <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+                <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
+                <a href="mailto:vikramadhanvi_paduchuri@srmap.edu.in"><i class="fas fa-envelope"></i><span>vikramadhanvi_paduchuri@srmap.edu.in</span></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i><span>Guntur - 522002,Andhra Pradesh</span></a>
+            </div>
+
+            <div class="box">
+                <a href="home.html"><span>Home</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="contact.html"><span>Contact</span></a>
+                <a href="listings.html"><span>All Listings</span></a>
+                <a href="#"><span>Saved Properties</span></a>
+            </div>
+
+            <div class="box">
+                <a href="#"><span>Facebook</span><i></i></a>
+                <a href="#"><span>Twitter</span><i></i></a>
+                <a href="#"><span>Linkedin</span><i ></i></a>
+                <a href="#"><span>Instagram</span><i ></i></a>
+            </div>
+        </section>
+
+        <div class="credit">&copy; Copyright @ 2022 by <span>Group 16</span> | All rights reserved!</div>
+    </footer>
+    
+    <script src="../JS/Seller_regd.js"></script>
+</body>
+</html>

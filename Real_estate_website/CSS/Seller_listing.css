@@ -1,0 +1,149 @@
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: white;
+    color: #fff;
+    padding: 40px;
+    background-color: #333;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; 
+  }
+  .account{
+    float:right;
+    margin-top: -55px;
+  }
+  nav{
+    padding: 0px;
+    margin-top:-20px;
+  }
+
+
+
+
+/* Styles for the seller dashboard */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+#properties-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr)); /* Updated width to 80% */
+    gap: 20px;
+}
+
+.property {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%; /* Set width to 100% to occupy the specified grid column */
+}
+
+.property h3 {
+    margin-top: 0;
+}
+
+
+
+/* Footer Styles */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-bottom: -30%;
+  }
+  
+  .footer .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .box {
+    flex: 1;
+  }
+  
+  .footer .box a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer .box a i {
+    margin-right: 10px;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer .credit span {
+    font-weight: bold;
+  }
+  

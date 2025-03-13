@@ -1,0 +1,238 @@
+/* Nav Bar Styles */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: #fff;
+    padding: 40px;
+}
+
+body,
+nav,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-2 .menu {
+        display: block;
+    }
+
+    .nav-2 ul {
+        display: none;
+    }
+
+    .nav-2 #menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-2 #menu-btn:hover {
+        color: #666;
+    }
+
+    .nav-2 .flex {
+        align-items: center;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    min-width: 300px;
+    width: 50%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 12px;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 30px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 15px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+.account {
+    float: right;
+    margin-top: -40px;
+}
+
+
+
+
+/* Footer Styles */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-bottom: -25%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/Login_Background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding-bottom: 160px; /* Adjust padding to make space for the footer */
+    overflow-y: scroll;
+}
+
+
+.footer .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .box {
+    flex: 1;
+}
+
+.footer .box a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer .box a i {
+    margin-right: 10px;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer .credit span {
+    font-weight: bold;
+}

@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#selected-property {
+  margin-bottom: 20px;
+}
+
+#selected-property h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+#selected-property p {
+  color: #666;
+}
+
+#additional-photos {
+  margin-bottom: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Changed to four columns */
+  grid-gap: 20px;
+}
+
+.photo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+#contact-form {
+  margin-left: 41.6px;
+  margin-right: 41.6px;
+  padding: 20px 20px 0px 20px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.photo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth effect */
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adding hover effect */
+.photo:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+}
+.features{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 20px;
+}
+.details {
+  margin-bottom: 20px;
+}
+/* CSS for form-group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* CSS for label */
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+/* CSS for select element */
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* CSS for text input */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* CSS for button */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CSS for button hover effect */
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+/*Navbar Style*/
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color: #fff;
+  padding: 40px;
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.account {
+  float: right;
+  margin-top: -55px;
+}
+
+nav {
+  padding: 0px;
+  margin-top: -20px;
+}
+
+
+
+
+
+/* Footer Styles */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1000;
+  margin-bottom: -1350px;
+}
+
+.footer .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .box {
+  flex: 1;
+}
+
+.footer .box a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer .box a i {
+  margin-right: 10px;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer .credit span {
+  font-weight: bold;
+}
+
+/* Styling for tick mark */
+.tick-mark::before {
+  content: '\2713'; /* Unicode for tick mark */
+  color: green;
+}
+
+/* Styling for cross mark */
+.cross-mark::before {
+  content: '\2718'; /* Unicode for cross mark */
+  color: red;
+}
